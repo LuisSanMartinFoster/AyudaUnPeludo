@@ -1,3 +1,13 @@
+body{
+	font-family: 'montserrat', serif;
+	background: #f1f1f1;
+	margin-top: 20px;
+	padding: 0;
+}
+*:focus {
+    outline: none;
+}
+
 .producto{
 	max-width: 280px;
 	vertical-align: top;
@@ -42,6 +52,10 @@
     text-align: center;
 }
 
+.producto .datos h3 a:hover{
+	text-decoration: underline;
+}
+
 .producto .btn-carrito{
 	display: block;
     text-align: center;
@@ -60,62 +74,4 @@
 }
 .producto:hover .btn-carrito{
 	display: block;
-}
-
-.slider{
-	margin-top: 20px;
-}
-.slick-prev{
-	font-size: 0;
-    position: absolute;
-    right: 55px;
-    top: -64px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #e2e2e2;
-    border-radius: 6px;
-    background-image: url(https://dummyimage.com/20x20/ffffff/474747&text=%3C);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #fff;
-    cursor: pointer;
-}
-.slick-next{
-	font-size: 0;
-    position: absolute;
-    right: 18px;
-    top: -64px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #e2e2e2;
-    border-radius: 6px;
-    background: url(https://dummyimage.com/20x20/ffffff/474747&text=%3E);
-	background-position: center;
-    background-repeat: no-repeat;
-    background-color: #fff;
-    cursor: pointer;
-}
-.slick-next:hover, .slick-prev:hover{
-	opacity: 0.8;
-}
-
-@media screen and (max-width: 650px){
-	.txt-titulo{
-		display: none;
-	}
-	.titulo .shape h2{
-		font-size: 20px;
-	}
-}
-@media screen and (max-width: 600px){
-	.slick-next, .slick-prev{
-		display: none !important;
-	}
-	.titulo .shape{
-		padding: 10px 10px;
-    	max-width: 160px;
-    }
-  .producto{
-    max-width: 100%;
-  }
 }
