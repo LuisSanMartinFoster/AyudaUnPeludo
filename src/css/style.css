@@ -87,6 +87,7 @@ body{
 	margin-left: 150px;
 }
 
+
 .btn-Salir{
 	display: block;
     text-align: center;
@@ -169,6 +170,61 @@ body{
 }
 .producto2:hover .btn-carrito{
 	display: block;
+}
+
+.producto3{
+	max-width: 400px;
+	vertical-align: top;
+	background: #ecebeb;
+	padding: 10px 0 20px 0;
+	margin-right: 35%;
+	border-radius: 10px;
+	margin-left: 35%;
+}
+
+.producto3 .contenedor-imagen{
+	min-height: 220px;
+	position: relative;
+	
+}
+.producto3 .contenedor-imagen img{
+	width: 100%;
+}
+.producto3 .contenedor-imagen .link{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
+	width: 100%;
+	height: 100%;
+}
+.producto3 .contenedor-imagen .img-hover{
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all ease-in-out 0.2s;
+}
+.producto3:hover .img-hover{
+	opacity: 1;
+}
+
+
+.producto3 .datos h3 a{
+    color: #2b2b2b;
+    font-size: 30px;
+    display: block;
+    text-transform: uppercase;
+	padding: 20px;
+    text-align: center;
+}
+
+.producto3 .datos h3 a:hover{
+	text-decoration: underline;
+}
+.producto3 .lista li{
+
+	margin-left: 20px;
 }
 
 
